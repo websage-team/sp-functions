@@ -6,13 +6,7 @@ const tool = {
      * 
      * @memberof ReactIsomorphic
      */
-    readFilesInPath: (dir) => {
-
-        const fs = require('fs')
-        const path = require('path')
-
-        return fs.readdirSync(path.resolve(process.cwd(), dir))
-    },
+    readFilesInPath: require('sp-isomorphic-utils/src/readFilesInPath'),
 
     /**
      * 筛选出指定文件
@@ -21,18 +15,7 @@ const tool = {
      * 
      * @memberof ReactIsomorphic
      */
-
-    filterTargetFile: (files, name, ext) => {
-
-        let regexp = new RegExp(`^${name}\.([^.]+).${ext}$`)
-
-        for (let i = 0; i < files.length; i++) {
-            let file = files[i]
-            if (regexp.test(file)) return file
-        }
-
-        return false
-    }
+    filterTargetFile: require('sp-isomorphic-utils/src/filterTargetFile'),
 
 }
 
