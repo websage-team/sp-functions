@@ -54,9 +54,8 @@ crypto.sha1('aa') // => e0c9035898dd52fc65c41454cec9c4d2611bfb37
 
 crypto.base64.encode('aa') // => YWE
 crypto.base64.decode('YWE') // => aa
-
 ```
 
 ## isomorphic-tool
 
-TODO: Remove instead of [sp-isomorphic-utils](https://github.com/websage-team/sp-isomorphic-utils)
+TODO: Remove and instead of [sp-isomorphic-utils](https://github.com/websage-team/sp-isomorphic-utils)
