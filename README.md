@@ -8,7 +8,7 @@ Functions for super-project
 
 More: http://is.js.org/
 ```
-const is = require('sp-function/is')
+const is = require('sp-functions/is')
 
 is.not.array([]) // => false
 ```
@@ -17,7 +17,7 @@ is.not.array([]) // => false
 
 More: http://momentjs.com/docs/
 ```
-const moment = require('sp-function/moment')
+const moment = require('sp-functions/moment')
 
 moment().format('YYYY-MM-DD HH:mm:ss')
 ```
@@ -26,7 +26,7 @@ moment().format('YYYY-MM-DD HH:mm:ss')
 
 Random string\int\float\bool\item
 ```
-const random = require('sp-function/random')
+const random = require('sp-functions/random')
 
 random.string(10) // => adf6f7a8s6 (a-z,0-9)
 random.string(10, true) // => aDf6F7a8s6 (a-z,A-Z,0-9)
@@ -42,11 +42,19 @@ random.bool() // => true
 random.item(['a', 'b', 'c']) // => b
 ```
 
+or
+
+```
+const randomString = require('sp-function/random/string')
+randomString(10) // => adf6f7a8s6 (a-z,0-9)
+```
+
+
 ## crypto
 
 MD5\SHA1\Base64
 ```
-const crypto = require('sp-function/crypto')
+const crypto = require('sp-functions/crypto')
 
 crypto.md5('aa') // => 4124bc0a9335c27f086f24ba207a4912
 
@@ -55,6 +63,14 @@ crypto.sha1('aa') // => e0c9035898dd52fc65c41454cec9c4d2611bfb37
 crypto.base64.encode('aa') // => YWE
 crypto.base64.decode('YWE') // => aa
 ```
+
+or
+
+```
+const md5 = require('sp-functions/crypto/md5')
+md5('aa') // => 4124bc0a9335c27f086f24ba207a4912
+```
+
 
 ## isomorphic-tool
 
